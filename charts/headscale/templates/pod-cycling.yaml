@@ -4,8 +4,7 @@ metadata:
   name: cycle-pods-cronjob
   namespace: {{ .Values.namespaceOverride }}
 spec:
-  #schedule: "0 4 * * *" # daily at 4am
-  schedule: "*/3 * * * *" # every 3m
+  schedule: "0 4 * * *" # daily at 4am
   concurrencyPolicy: Forbid # Prevents overlapping jobs if a previous run hangs
   successfulJobsHistoryLimit: 3
   failedJobsHistoryLimit: 3
