@@ -15,9 +15,6 @@ spec:
       labels:
         app: headscale
     spec:
-      containers:
-        - name: headscale
-          image: docker.io/headscale/headscale:latest
       initContainers:
         - name: headscale-init
           image: busybox
