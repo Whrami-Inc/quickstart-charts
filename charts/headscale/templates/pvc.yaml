@@ -5,7 +5,7 @@ metadata:
   name: headscale-pvc
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
       storage: {{ default "500Mi" .Values.storageSize }}
