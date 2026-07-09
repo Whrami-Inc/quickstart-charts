@@ -32,8 +32,7 @@ data:
     # Address to listen to / bind to on the server
     #
     # For production:
-    # listen_addr: 0.0.0.0:8080
-    listen_addr: 127.0.0.1:8443
+    listen_addr: 0.0.0.0:8443
 
     # Address to listen to /metrics and /debug, you may want
     # to keep this endpoint private to your internal network
