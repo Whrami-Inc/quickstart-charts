@@ -33,7 +33,8 @@ spec:
               mountPath: /config
       containers:
         - name: headscale
-          image: docker.io/headscale/headscale:latest
+          #image: docker.io/headscale/headscale:latest
+          image: docker.io/headscale/headscale:v0.29.2
           command: ["headscale", "serve"]
           volumeMounts:
             - name: headscale-pvc
